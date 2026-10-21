@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {"darkMode": "class", "theme": {"extend": {"colors": {"on-tertiary": "#ffffff", "error": "#ba1a1a", "surface-container-low": "#f3f4f5", "inverse-primary": "#b2c5ff", "on-secondary-fixed-variant": "#6d3a00", "surface-container": "#edeeef", "on-error-container": "#93000a", "tertiary": "#545c72", "on-surface-variant": "#434653", "primary-fixed": "#dae2ff", "primary": "#1955c5", "surface-bright": "#f8f9fa", "on-primary-container": "#fefcff", "outline-variant": "#c3c6d6", "inverse-on-surface": "#f0f1f2", "tertiary-fixed-dim": "#bec6e0", "on-primary-fixed": "#001848", "surface-container-highest": "#e1e3e4", "on-tertiary-fixed-variant": "#3f465c", "surface-tint": "#1e57c7", "error-container": "#ffdad6", "secondary-fixed": "#ffdcc2", "tertiary-container": "#6c748b", "on-primary-fixed-variant": "#0040a2", "on-background": "#191c1d", "on-secondary-container": "#6b3900", "outline": "#737685", "surface-container-lowest": "#ffffff", "on-surface": "#191c1d", "surface-container-high": "#e7e8e9", "surface-dim": "#d9dadb", "secondary-fixed-dim": "#ffb77a", "tertiary-fixed": "#dae2fd", "on-error": "#ffffff", "inverse-surface": "#2e3132", "secondary-container": "#fc9d41", "on-tertiary-container": "#fefcff", "on-tertiary-fixed": "#131b2e", "surface": "#f8f9fa", "background": "#f8f9fa", "on-secondary-fixed": "#2e1500", "on-primary": "#ffffff", "surface-variant": "#e1e3e4", "on-secondary": "#ffffff", "secondary": "#8f4e00", "primary-container": "#3d6fdf", "primary-fixed-dim": "#b2c5ff"}, "borderRadius": {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"}, "spacing": {"grid-margin": "1.5rem", "grid-gutter": "1.25rem", "space-2xl": "3rem", "space-2xs": "0.25rem", "space-xl": "2rem", "space-lg": "1.5rem", "space-xs": "0.5rem", "space-sm": "0.75rem", "space-md": "1rem"}, "fontFamily": {"headline-md": ["Space Grotesk"], "body-sm": ["Space Grotesk"], "label-md": ["Space Grotesk"], "body-md": ["Space Grotesk"], "headline-lg": ["Space Grotesk"], "label-sm": ["Space Grotesk"], "headline-xl-mobile": ["Space Grotesk"], "body-lg": ["Space Grotesk"], "headline-xl": ["Space Grotesk"], "headline-lg-mobile": ["Space Grotesk"], "headline-sm": ["Space Grotesk"]}, "fontSize": {"headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "500"}], "body-sm": ["12px", {"lineHeight": "16px", "fontWeight": "400"}], "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "500"}], "body-md": ["14px", {"lineHeight": "20px", "fontWeight": "400"}], "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600"}], "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500"}], "headline-xl-mobile": ["32px", {"lineHeight": "40px", "fontWeight": "600"}], "body-lg": ["16px", {"lineHeight": "24px", "fontWeight": "400"}], "headline-xl": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "600"}], "headline-lg-mobile": ["26px", {"lineHeight": "32px", "fontWeight": "600"}], "headline-sm": ["18px", {"lineHeight": "24px", "fontWeight": "500"}]}}}};</script><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@100..900&display=swap" rel="stylesheet"/></head><body class="bg-surface font-body-md text-on-surface"><header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-7xl mx-auto px-8 flex items-center justify-between"><a class="text-headline-sm font-headline-md font-bold text-primary flex items-center gap-2" data-path="homepage" href="#"><span class="material-symbols-outlined text-secondary">air</span>ScentCast</a><nav class="hidden md:flex items-center gap-space-lg" data-active-classes="bg-primary-container text-on-primary-container font-bold rounded-lg px-3 py-1.5"><a aria-current="page" class="transition-colors bg-primary-container text-on-primary-container font-bold rounded-lg px-3 py-1.5" data-path="homepage" href="#">Homepage</a><a class="text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="weather-rec" href="#">Weather Rec</a><a class="text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="dupe-finder" href="#">Dupe Finder</a><a class="text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="directory" href="#">Directory</a><a class="text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="about" href="#">About</a><a class="text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="contact" href="#">Contact</a></nav><div class="flex items-center gap-4"><button class="px-2.5 py-1 rounded-full text-label-sm font-label-md bg-surface-container-low shadow-[-3px_-3px_8px_rgba(255,255,255,0.9),3px_3px_8px_rgba(15,23,42,0.08)] hover:shadow-inner text-on-surface transition-all">EN</button><button class="p-2 rounded-full bg-surface-container-low shadow-[-3px_-3px_8px_rgba(255,255,255,0.9),3px_3px_8px_rgba(15,23,42,0.08)] hover:shadow-inner text-on-surface transition-all"><span class="material-symbols-outlined text-[18px]">light_mode</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-[-3px_-3px_8px_rgba(255,255,255,0.9),3px_3px_8px_rgba(15,23,42,0.08)] cursor-pointer"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface min-h-[80vh]"><div class="flex flex-col w-full bg-surface text-on-surface">
+<!-- Hero Section -->
+<section class="relative px-8 pt-12 pb-20 overflow-hidden">
+<!-- Subtle blurred background glow -->
+<div class="absolute top-10 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-primary/5 rounded-full blur-3xl pointer-events-none"></div>
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<!-- Left Column: Title & Search -->
+<div class="lg:col-span-7 flex flex-col gap-6">
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-surface-container-low shadow-[inset_2px_2px_5px_rgba(15,23,42,0.06),inset_-2px_-2px_5px_rgba(255,255,255,0.8)] w-max">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span class="text-label-sm font-label-md text-on-surface-variant">Atmospheric Olfactory Intelligence • Kuala Lumpur</span>
+</div>
+<h1 class="text-headline-xl font-headline-xl text-on-background tracking-tight">
+          Match your fragrance to the <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">monsoon & tropical air</span>.
+        </h1>
+<p class="text-body-lg text-on-surface-variant max-w-xl">
+          ScentCast analyzes real-time humidity, barometric pressure, and temperature to project how your favorite perfumes bloom, diffuse, and linger.
+        </p>
+<!-- Neumorphic Search Bar -->
+<div class="flex items-center p-2 rounded-2xl bg-surface shadow-[inset_4px_4px_8px_#d9dadb,inset_-4px_-4px_8px_#ffffff] max-w-xl w-full mt-2">
+<span class="material-symbols-outlined text-outline px-4">search</span>
+<input class="bg-transparent border-none outline-none w-full text-body-md text-on-surface placeholder:text-outline" placeholder="Search perfumes, notes (e.g. Oudh, Bergamot, Vanilla)..." type="text"/>
+<button class="px-6 py-3 rounded-xl bg-primary text-on-primary font-label-md shadow-[-4px_-4px_10px_rgba(255,255,255,0.9),4px_4px_10px_rgba(25,85,197,0.3)] hover:scale-[1.02] transition-all">
+            Predict Scent
+          </button>
+</div>
+<div class="flex items-center gap-8 mt-4 text-body-sm text-on-surface-variant">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary">check_circle</span>
+<span>98.4% Projection Accuracy</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">humidity_percentage</span>
+<span>Dynamic Humidity Scaling</span>
+</div>
+</div>
+</div>
+<!-- Right Column: Weather Badge Card -->
+<div class="lg:col-span-5">
+<div class="p-8 rounded-3xl bg-surface shadow-[8px_8px_16px_#d9dadb,-8px_-8px_16px_#ffffff] flex flex-col gap-6 relative overflow-hidden border border-outline-variant/10">
+<div class="absolute -right-10 -top-10 w-40 h-40 bg-gradient-to-br from-primary/10 to-secondary/10 rounded-full blur-2xl"></div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-2xl bg-surface-container-low shadow-[4px_4px_8px_#d9dadb,-4px_-4px_8px_#ffffff] flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[28px]" style="font-variation-settings: 'FILL' 1;">wb_sunny</span>
+</div>
+<div>
+<h3 class="text-headline-sm font-headline-sm text-on-background">Kuala Lumpur</h3>
+<p class="text-body-sm text-on-surface-variant">Equatorial Tropics</p>
+</div>
+</div>
+<span class="px-3 py-1 rounded-full bg-secondary-container/20 text-on-secondary-fixed-variant text-label-sm font-label-md">Live Forecast</span>
+</div>
+<div class="grid grid-cols-2 gap-4 py-4 border-y border-outline-variant/20">
+<div>
+<span class="text-body-sm text-on-surface-variant">Temperature</span>
+<div class="text-headline-lg font-headline-lg text-on-background mt-1">32°C</div>
+</div>
+<div>
+<span class="text-body-sm text-on-surface-variant">Humidity</span>
+<div class="text-headline-lg font-headline-lg text-secondary mt-1">79%</div>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<div class="flex justify-between text-body-sm">
+<span class="text-on-surface-variant">Recommended Scent Family</span>
+<span class="font-bold text-primary">Aquatic Citrus & Woods</span>
+</div>
+<div class="p-4 rounded-2xl bg-surface-container-low shadow-[inset_3px_3px_6px_#d9dadb,inset_-3px_-3px_6px_#ffffff] flex items-center gap-4">
+<div class="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined">air</span>
+</div>
+<div class="text-body-sm">
+<span class="font-bold text-on-background">High humidity alert:</span> Heavy gourmands will amplify. Opt for crisp ambroxan or citrus notes today.
+              </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Quick Recommender & Dupe Search Bar Section -->
+<section class="px-8 py-12 max-w-7xl mx-auto w-full">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+<!-- Weather Fragrance Recommender Widget -->
+<div class="p-8 rounded-3xl bg-surface shadow-[8px_8px_16px_#d9dadb,-8px_-8px_16px_#ffffff] flex flex-col gap-6">
+<div class="flex items-center justify-between">
+<h3 class="text-headline-md font-headline-md text-on-background">Atmospheric Selector</h3>
+<span class="material-symbols-outlined text-primary">tune</span>
+</div>
+<p class="text-body-md text-on-surface-variant">Select weather condition to tailor your scent projection profile:</p>
+<div class="grid grid-cols-3 gap-3">
+<button class="p-4 rounded-2xl bg-surface shadow-[inset_3px_3px_6px_#d9dadb,inset_-3px_-3px_6px_#ffffff] text-on-background text-label-md font-label-md flex flex-col items-center gap-2 border border-primary/20">
+<span class="material-symbols-outlined text-primary">rainy</span>
+            Monsoon Rain
+          </button>
+<button class="p-4 rounded-2xl bg-surface shadow-[4px_4px_8px_#d9dadb,-4px_-4px_8px_#ffffff] hover:shadow-[inset_2px_2px_4px_#d9dadb,inset_-2px_-2px_4px_#ffffff] text-on-surface-variant text-label-md font-label-md flex flex-col items-center gap-2 transition-all">
+<span class="material-symbols-outlined text-secondary">sunny</span>
+            High Heat
+          </button>
+<button class="p-4 rounded-2xl bg-surface shadow-[4px_4px_8px_#d9dadb,-4px_-4px_8px_#ffffff] hover:shadow-[inset_2px_2px_4px_#d9dadb,inset_-2px_-2px_4px_#ffffff] text-on-surface-variant text-label-md font-label-md flex flex-col items-center gap-2 transition-all">
+<span class="material-symbols-outlined text-tertiary">nights_stay</span>
+            Evening Breezes
+          </button>
+</div>
+<div class="flex items-center justify-between mt-2 pt-4 border-t border-outline-variant/20">
+<span class="text-body-sm text-on-surface-variant">Selected note preference: <strong class="text-on-background">Ambroxan, Bergamot</strong></span>
+<button class="text-label-md font-label-md text-primary hover:underline">Apply Filter →</button>
+</div>
+</div>
+<!-- Quick Dupe Search Widget -->
+<div class="p-8 rounded-3xl bg-surface shadow-[8px_8px_16px_#d9dadb,-8px_-8px_16px_#ffffff] flex flex-col gap-6">
+<div class="flex items-center justify-between">
+<h3 class="text-headline-md font-headline-md text-on-background">Instant Dupe Finder</h3>
+<span class="material-symbols-outlined text-secondary">compare_arrows</span>
+</div>
+<p class="text-body-md text-on-surface-variant">Looking for an expensive niche scent profile at local Malaysian pricing?</p>
+<div class="flex flex-col gap-4">
+<div class="p-3 rounded-2xl bg-surface shadow-[inset_3px_3px_6px_#d9dadb,inset_-3px_-3px_6px_#ffffff] flex items-center gap-3">
+<span class="material-symbols-outlined text-outline px-2">swipe_down_alt</span>
+<input class="bg-transparent border-none outline-none w-full text-body-md text-on-surface placeholder:text-outline" placeholder="Enter luxury perfume (e.g., Creed Aventura, Tom Ford Tobacco Vanille)..." type="text"/>
+</div>
+<button class="w-full py-3.5 rounded-2xl bg-secondary text-on-secondary font-label-md shadow-[-4px_-4px_10px_rgba(255,255,255,0.9),4px_4px_10px_rgba(143,78,0,0.3)] hover:scale-[1.01] transition-all">
+            Find Malaysian Market Dupes
+          </button>
+</div>
+<div class="flex items-center gap-2 text-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-xs text-secondary">bolt</span>
+<span>Popular match: <strong class="text-on-background">Afnan Turathi Blue</strong> (95% match to Bvlgari Tygar)</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured Categories / Trending Malaysian Weather Picks -->
+<section class="px-8 py-12 max-w-7xl mx-auto w-full">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
+<div>
+<span class="text-label-sm font-label-md text-primary uppercase tracking-wider">Curated Selections</span>
+<h2 class="text-headline-lg font-headline-lg text-on-background mt-1">Trending Malaysian Weather Picks</h2>
+</div>
+<div class="flex gap-3">
+<button class="p-3 rounded-xl bg-surface shadow-[4px_4px_8px_#d9dadb,-4px_-4px_8px_#ffffff] hover:shadow-[inset_2px_2px_4px_#d9dadb,inset_-2px_-2px_4px_#ffffff] text-on-surface transition-all">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<button class="p-3 rounded-xl bg-surface shadow-[4px_4px_8px_#d9dadb,-4px_-4px_8px_#ffffff] hover:shadow-[inset_2px_2px_4px_#d9dadb,inset_-2px_-2px_4px_#ffffff] text-on-surface transition-all">
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Card 1: Afnan Turathi Blue -->
+<div class="p-6 rounded-3xl bg-surface shadow-[8px_8px_16px_#d9dadb,-8px_-8px_16px_#ffffff] flex flex-col justify-between group hover:-translate-y-1 transition-transform">
+<div class="flex flex-col gap-4">
+<div class="h-56 rounded-2xl bg-surface-container-low shadow-[inset_3px_3px_6px_#d9dadb,inset_-3px_-3px_6px_#ffffff] relative overflow-hidden flex items-center justify-center">
+<div class="absolute top-4 right-4 px-3 py-1 rounded-full bg-primary text-on-primary text-label-sm font-label-md shadow-sm">
+              96% Match
+            </div>
+<img class="w-full h-full object-cover rounded-2xl opacity-90 group-hover:scale-105 transition-transform duration-500" data-alt="A sleek minimalist perfume bottle of Afnan Turathi Blue resting on a sun-drenched concrete pedestal with subtle blue water ripples and soft morning shadows in an editorial studio lighting setup." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1tfi0_UWqyHsN0xn4yIn2poghdId3oPV31LdJ6wDhCgMi4BdaX-FSHyDqTg6fpzN1HNxTVxNuEL1g-UZmv3gQsBNjqE_iTsibPrqw1r8h72Zr-HpgkD2YQT1WGAcYnSu8pY2Y2I8hq4F5vVWknZj-3xZ2iB6-Y0U7yR0xMmMTBmAm4QW6wGAxK9KTF4f1mIvGXQQHDE5YuhjqqFdvStojWq7Yt2D7oc7YL4zxhIBcE1pj5jKrqc1i7w"/>
+</div>
+<div>
+<span class="text-body-sm text-secondary font-bold">Best for High Heat & Humidity</span>
+<h3 class="text-headline-sm font-headline-sm text-on-background mt-1">Afnan Turathi Blue</h3>
+<p class="text-body-sm text-on-surface-variant mt-2 line-clamp-2">Crisp grapefruit, woody musk, and amber notes that cut cleanly through tropical humidity without cloying.</p>
+</div>
+</div>
+<div class="flex items-center justify-between mt-6 pt-4 border-t border-outline-variant/10">
+<div>
+<span class="text-body-sm text-on-surface-variant">Est. Price</span>
+<div class="text-headline-sm font-headline-sm text-primary">RM 165.00</div>
+</div>
+<button class="px-4 py-2.5 rounded-xl bg-surface shadow-[-3px_-3px_8px_rgba(255,255,255,0.9),3px_3px_8px_rgba(15,23,42,0.08)] hover:shadow-inner text-on-surface font-label-md text-label-sm transition-all">
+            View Forecast
+          </button>
+</div>
+</div>
+<!-- Card 2: Al-Rehab Choco Musk -->
+<div class="p-6 rounded-3xl bg-surface shadow-[8px_8px_16px_#d9dadb,-8px_-8px_16px_#ffffff] flex flex-col justify-between group hover:-translate-y-1 transition-transform">
+<div class="flex flex-col gap-4">
+<div class="h-56 rounded-2xl bg-surface-container-low shadow-[inset_3px_3px_6px_#d9dadb,inset_-3px_-3px_6px_#ffffff] relative overflow-hidden flex items-center justify-center">
+<div class="absolute top-4 right-4 px-3 py-1 rounded-full bg-secondary text-on-secondary text-label-sm font-label-md shadow-sm">
+              Cozy Monsoon
+            </div>
+<img class="w-full h-full object-cover rounded-2xl opacity-90 group-hover:scale-105 transition-transform duration-500" data-alt="An amber glass perfume roll-on bottle of Al-Rehab Choco Musk surrounded by roasted cacao beans and soft vanilla pods on a warm textured wooden surface with cozy ambient lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBB-qlGfjUKrHxgSiGQ9BKuK4XcwYMhvVjWZlsVt7aRSCm6Zbko_ga1WyoHpRSR_Vn1B-JHTdgKQex_AlK_An8rXGzyb5bGg1Fl63r_J9EbuPGq5lrNIBm8pxiXlpRBhY8o_wNicREq7Aq0-MFVb5p8Q0uLGVXg1qoxkVzfdhy0Sl9-2nb6DexrJqVlgQW2CxPb5K2bzZ3RdsIgykoYntnAzc7hr_dnsrdaRFUeEF5LQ6oxGgI3H5xGEg"/>
+</div>
+<div>
+<span class="text-body-sm text-secondary font-bold">Best for Air-Conditioned Offices</span>
+<h3 class="text-headline-sm font-headline-sm text-on-background mt-1">Al-Rehab Choco Musk</h3>
+<p class="text-body-sm text-on-surface-variant mt-2 line-clamp-2">Warm milk chocolate, rich cinnamon, and white musk. Perfect for cool indoor air-conditioning.</p>
+</div>
+</div>
+<div class="flex items-center justify-between mt-6 pt-4 border-t border-outline-variant/10">
+<div>
+<span class="text-body-sm text-on-surface-variant">Est. Price</span>
+<div class="text-headline-sm font-headline-sm text-primary">RM 25.00</div>
+</div>
+<button class="px-4 py-2.5 rounded-xl bg-surface shadow-[-3px_-3px_8px_rgba(255,255,255,0.9),3px_3px_8px_rgba(15,23,42,0.08)] hover:shadow-inner text-on-surface font-label-md text-label-sm transition-all">
+            View Forecast
+          </button>
+</div>
+</div>
+<!-- Card 3: Lattafa Khamrah -->
+<div class="p-6 rounded-3xl bg-surface shadow-[8px_8px_16px_#d9dadb,-8px_-8px_16px_#ffffff] flex flex-col justify-between group hover:-translate-y-1 transition-transform">
+<div class="flex flex-col gap-4">
+<div class="h-56 rounded-2xl bg-surface-container-low shadow-[inset_3px_3px_6px_#d9dadb,inset_-3px_-3px_6px_#ffffff] relative overflow-hidden flex items-center justify-center">
+<div class="absolute top-4 right-4 px-3 py-1 rounded-full bg-tertiary text-on-tertiary text-label-sm font-label-md shadow-sm">
+              98% Match
+            </div>
+<img class="w-full h-full object-cover rounded-2xl opacity-90 group-hover:scale-105 transition-transform duration-500" data-alt="An ornate crystal perfume bottle of Lattafa Khamrah with golden juice, set against a backdrop of warm spices, star anise, and dates under dramatic warm spotlighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBaV5IVXmFxslWScaYC4bLDxPSx3_BCnJtYXpkJS2bGnTDSBDRmFJN7trp0yfTxjlblFLWW31ab7Y04Reet1U93RBia_bRWL_ESInMOZwr1EpgNnGHusqlQOgS20x5VzrkSMlGOITbJLoUImZbrU8RxQEq9aMo46Cz8YdP0YM9efp6RTVXlFV9x-EyRxppV4SkpRJiPySI4g-cNt3CAQ5c7gCtfJgVA3OGWmgt62JInkf0WOtWonASNcQ"/>
+</div>
+<div>
+<span class="text-body-sm text-secondary font-bold">Best for Evening Rain</span>
+<h3 class="text-headline-sm font-headline-sm text-on-background mt-1">Lattafa Khamrah</h3>
+<p class="text-body-sm text-on-surface-variant mt-2 line-clamp-2">Opulent cognac, praline, vanilla, and sweet dates. Projects like a beast when evening temperatures drop.</p>
+</div>
+</div>
+<div class="flex items-center justify-between mt-6 pt-4 border-t border-outline-variant/10">
+<div>
+<span class="text-body-sm text-on-surface-variant">Est. Price</span>
+<div class="text-headline-sm font-headline-sm text-primary">RM 145.00</div>
+</div>
+<button class="px-4 py-2.5 rounded-xl bg-surface shadow-[-3px_-3px_8px_rgba(255,255,255,0.9),3px_3px_8px_rgba(15,23,42,0.08)] hover:shadow-inner text-on-surface font-label-md text-label-sm transition-all">
+            View Forecast
+          </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Community Activity & ScentBot Floating Banner Section -->
+<section class="px-8 py-12 max-w-7xl mx-auto w-full mb-12">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+<!-- Community Feed Preview -->
+<div class="lg:col-span-8 p-8 rounded-3xl bg-surface shadow-[8px_8px_16px_#d9dadb,-8px_-8px_16px_#ffffff] flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-6">
+<div>
+<span class="text-label-sm font-label-md text-secondary uppercase">Live Atmospheric Logs</span>
+<h3 class="text-headline-md font-headline-md text-on-background mt-1">Community Scent Reports</h3>
+</div>
+<span class="text-body-sm text-primary font-bold">View All (1.2k)</span>
+</div>
+<div class="flex flex-col gap-4">
+<!-- Feed Item 1 -->
+<div class="p-4 rounded-2xl bg-surface-container-low shadow-[inset_2px_2px_5px_#d9dadb,inset_-2px_-2px_5px_#ffffff] flex items-center justify-between gap-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold text-label-md">AZ</div>
+<div>
+<div class="text-body-md font-bold text-on-background">Amirul Z. <span class="text-body-sm font-normal text-on-surface-variant">tested in Bangsar</span></div>
+<div class="text-body-sm text-on-surface-variant">"Turathi Blue held up amazingly through 3 hours of afternoon humidity. 8.5/10 longevity."</div>
+</div>
+</div>
+<span class="text-body-sm text-secondary font-bold flex-shrink-0">2 mins ago</span>
+</div>
+<!-- Feed Item 2 -->
+<div class="p-4 rounded-2xl bg-surface-container-low shadow-[inset_2px_2px_5px_#d9dadb,inset_-2px_-2px_5px_#ffffff] flex items-center justify-between gap-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-bold text-label-md">SL</div>
+<div>
+<div class="text-body-md font-bold text-on-background">Sarah L. <span class="text-body-sm font-normal text-on-surface-variant">tested in PJ</span></div>
+<div class="text-body-sm text-on-surface-variant">"Khamrah is too dense for the afternoon thunderstorm heat, save it for midnight air-con!"</div>
+</div>
+</div>
+<span class="text-body-sm text-secondary font-bold flex-shrink-0">14 mins ago</span>
+</div>
+</div>
+</div>
+<div class="mt-6 pt-4 border-t border-outline-variant/10 flex items-center justify-between text-body-sm text-on-surface-variant">
+<span>Active scent sniffers online right now: <strong class="text-on-background">342</strong></span>
+<button class="text-primary font-bold hover:underline">Submit your log →</button>
+</div>
+</div>
+<!-- ScentBot Banner -->
+<div class="lg:col-span-4 p-8 rounded-3xl bg-gradient-to-br from-primary to-primary-container text-on-primary shadow-[8px_8px_16px_rgba(25,85,197,0.2),-8px_-8px_16px_#ffffff] flex flex-col justify-between relative overflow-hidden">
+<div class="absolute -right-8 -bottom-8 w-36 h-36 bg-secondary/30 rounded-full blur-xl pointer-events-none"></div>
+<div class="flex flex-col gap-4">
+<div class="w-12 h-12 rounded-2xl bg-surface/20 backdrop-blur-md flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-[28px]">smart_toy</span>
+</div>
+<div>
+<h3 class="text-headline-md font-headline-md text-on-primary">Meet ScentBot AI</h3>
+<p class="text-body-md text-on-primary/80 mt-2">Confused by how today's weather will affect your signature scent? Ask our AI olfactory forecaster instantly.</p>
+</div>
+</div>
+<div class="mt-8">
+<button class="w-full py-3.5 rounded-2xl bg-surface text-on-surface font-label-md shadow-[-4px_-4px_10px_rgba(255,255,255,0.9),4px_4px_10px_rgba(15,23,42,0.1)] hover:scale-[1.02] transition-all flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-secondary">chat</span>
+            Launch ScentBot Chat
+          </button>
+</div>
+</div>
+</div>
+</section>
+</div></main><div class="fixed bottom-6 right-6 z-50"><button class="w-14 h-14 rounded-full bg-secondary text-on-secondary flex items-center justify-center shadow-[-6px_-6px_16px_rgba(255,255,255,0.9),6px_6px_16px_rgba(15,23,42,0.15)] hover:scale-105 transition-transform"><span class="material-symbols-outlined text-[24px]">smart_toy</span></button></div><footer class="w-full bg-surface-container-low py-space-2xl"><div class="max-w-7xl mx-auto px-8 flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="text-on-surface-variant text-body-sm">© 2024 ScentCast. Atmospheric Olfactory Intelligence. All rights reserved.</div><div class="flex items-center gap-space-lg"><a class="text-body-sm text-on-surface-variant hover:text-on-surface" href="#">Privacy Policy</a><a class="text-body-sm text-on-surface-variant hover:text-on-surface" href="#">Terms of Service</a><a class="text-body-sm text-on-surface-variant hover:text-on-surface" href="#">Support</a></div></div></footer></body></html>

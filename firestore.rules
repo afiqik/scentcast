@@ -1,0 +1,77 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Helper function to verify admin role
+    function isAdmin() {
+      return request.auth != null && (
+        (exists(/databases/$(database)/documents/admins/$(request.auth.uid)) &&
+         get(/databases/$(database)/documents/admins/$(request.auth.uid)).data.role == 'admin') ||
+        (exists(/databases/$(database)/documents/users/$(request.auth.uid)) &&
+         get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'admin') ||
+        request.auth.token.email == 'admin@scentcast.my'
+      );
+    }
+
+    // Perfume catalog: Publicly readable, writeable only by Admins
+    match /perfumes/{perfumeId} {
+      allow read: if true;
+      allow create, update, delete: if isAdmin();
+    }
+
+    // Admins collection: strictly protected, accessible only by Admins
+    match /admins/{adminId} {
+      allow read, write: if isAdmin();
+      match /{allSubpaths=**} {
+        allow read, write: if isAdmin();
+      }
+    }
+
+    // Admin audit logs: writeable and readable only by Admins
+    match /admin_logs/{logId} {
+      allow read, write: if isAdmin();
+    }
+
+    // Customers collection:
+    // - Public read for profiles and avatars
+    // - Customer can create and update their own document, cannot elevate role to admin
+    // - Only admin can delete customer profiles
+    match /customers/{customerId} {
+      allow read: if true;
+      allow create: if request.auth != null && request.auth.uid == customerId;
+      allow update: if request.auth != null && (
+        (request.auth.uid == customerId && (!('role' in request.resource.data) || request.resource.data.role == resource.data.role)) ||
+        isAdmin()
+      );
+      allow delete: if isAdmin();
+    }
+
+    // Users collection (Legacy compatibility):
+    match /users/{userId} {
+      allow read: if true;
+      allow create: if request.auth != null && request.auth.uid == userId;
+      allow update: if request.auth != null && (
+        (request.auth.uid == userId && (!('role' in request.resource.data) || request.resource.data.role == resource.data.role)) ||
+        isAdmin()
+      );
+      allow delete: if isAdmin();
+    }
+
+    // Community reviews and comments:
+    // - Publicly readable
+    // - Authenticated users can post comments
+    // - Only comment author can edit
+    // - Comment author OR Admin can delete (moderation)
+    match /comments/{commentId} {
+      allow read: if true;
+      allow create: if request.auth != null;
+      allow update: if request.auth != null && resource.data.userId == request.auth.uid;
+      allow delete: if request.auth != null && (resource.data.userId == request.auth.uid || isAdmin());
+    }
+
+    // Default fallback: allow read, restrict write to admin
+    match /{document=**} {
+      allow read: if true;
+      allow write: if isAdmin();
+    }
+  }
+}

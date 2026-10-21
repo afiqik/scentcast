@@ -1,0 +1,36 @@
+# --- dependencies & build output ---
+node_modules/
+dist/
+build/
+*.local
+
+# --- Firebase ---
+.firebase/
+*-debug.log
+firebase-debug.log
+firestore-debug.log
+database-debug.log
+
+# --- env & secrets (never commit) ---
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+serviceAccount*.json
+
+# --- internal dev scaffolding / notes (not part of the app) ---
+.agents/
+ORIGINAL_REQUEST.md
+
+# --- duplicate design export (kept once under design/) ---
+stitch_scentcast_perfume_discovery_platform/
+
+# --- OS / editor cruft ---
+.DS_Store
+Thumbs.db
+
+# --- informal internal notes ---
+perbaiki .md
+masalah .md
+information .md

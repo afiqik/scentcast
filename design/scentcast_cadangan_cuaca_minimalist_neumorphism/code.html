@@ -1,0 +1,583 @@
+<!DOCTYPE html><html class="light" lang="ms"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}.neu-flat{background:#F8F9FA;box-shadow:6px 6px 16px rgba(15,23,42,0.05),-6px -6px 16px #FFFFFF;border:1px solid rgba(15,23,42,0.03);}.neu-inset{background:#EFF1F5;box-shadow:inset 3px 3px 6px rgba(15,23,42,0.06),inset -3px -3px 6px #FFFFFF;border:1px solid rgba(15,23,42,0.04);}.neu-button{background:#F8F9FA;box-shadow:4px 4px 10px rgba(15,23,42,0.06),-4px -4px 10px #FFFFFF;border:1px solid rgba(15,23,42,0.03);}.neu-floating{background:#F8F9FA;box-shadow:10px 10px 24px rgba(15,23,42,0.08),-10px -10px 24px #FFFFFF;border:1px solid rgba(15,23,42,0.03);}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"atmospheric-blue":"#4B7BEC","inverse-on-surface":"#eef0ff","border-hairline":"rgba(15, 23, 42, 0.05)","on-background":"#131b2e","background":"#faf8ff","surface-dim":"#d2d9f4","on-primary-fixed":"#001848","on-surface":"#131b2e","surface-container-lowest":"#ffffff","on-tertiary-fixed":"#2f1500","on-primary-container":"#fefcff","on-tertiary-fixed-variant":"#6e3900","on-tertiary":"#ffffff","primary-fixed":"#dae2ff","on-tertiary-container":"#fffbff","outline":"#737685","surface-container-low":"#f2f3ff","ice-white":"#F8F9FA","surface-tint":"#1e57c7","error":"#ba1a1a","tertiary-fixed-dim":"#ffb77e","tertiary-container":"#b15f00","on-secondary-fixed":"#2e1500","on-secondary-fixed-variant":"#6d3a00","primary":"#1955c5","shadow-dark":"rgba(15, 23, 42, 0.06)","deep-navy":"#0F172A","inverse-surface":"#283044","primary-fixed-dim":"#b2c5ff","surface":"#faf8ff","outline-variant":"#c3c6d6","secondary-fixed-dim":"#ffb77a","surface-variant":"#dae2fd","secondary-container":"#fc9d41","tertiary":"#8d4b00","on-primary-fixed-variant":"#0040a2","surface-bright":"#faf8ff","on-error-container":"#93000a","secondary-fixed":"#ffdcc2","surface-inset":"#EFF1F5","error-container":"#ffdad6","inverse-primary":"#b2c5ff","tertiary-fixed":"#ffdcc3","secondary":"#8f4e00","on-error":"#ffffff","surface-container-highest":"#dae2fd","primary-container":"#3d6fdf","surface-container":"#eaedff","on-primary":"#ffffff","sunset-amber":"#FF9F43","surface-container-high":"#e2e7ff","on-secondary-container":"#6b3900","shadow-light":"#FFFFFF","on-surface-variant":"#434653","on-secondary":"#ffffff"},borderRadius:{"DEFAULT":"1rem","lg":"2rem","xl":"3rem","full":"9999px"},spacing:{"margin-mobile":"1.25rem","space-3xl":"4rem","space-2xl":"3rem","gutter-desktop":"1.5rem","space-xs":"0.5rem","space-2xs":"0.25rem","gutter-mobile":"1rem","space-lg":"1.5rem","space-xl":"2rem","margin-desktop":"3rem","space-md":"1rem","max-width":"1200px","space-sm":"0.75rem"},fontFamily:{"label-sm":["Space Grotesk"],"headline-md":["Space Grotesk"],"mono-metric":["Space Grotesk"],"headline-lg":["Space Grotesk"],"display-lg":["Space Grotesk"],"display-lg-mobile":["Space Grotesk"],"title-sm":["Space Grotesk"],"body-md":["Outfit"],"body-lg":["Outfit"],"label-md":["Space Grotesk"]},fontSize:{"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.06em","fontWeight":"700"}],"headline-md":["22px",{"lineHeight":"28px","letterSpacing":"-0.015em","fontWeight":"600"}],"mono-metric":["14px",{"lineHeight":"18px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-lg":["28px",{"lineHeight":"36px","letterSpacing":"-0.02em","fontWeight":"700"}],"display-lg":["44px",{"lineHeight":"52px","letterSpacing":"-0.03em","fontWeight":"700"}],"display-lg-mobile":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"title-sm":["18px",{"lineHeight":"24px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"22px","letterSpacing":"0em","fontWeight":"400"}],"body-lg":["16px",{"lineHeight":"26px","letterSpacing":"0em","fontWeight":"400"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.04em","fontWeight":"600"}]}}}};</script></head><body class="bg-ice-white font-body-md text-deep-navy antialiased min-h-screen flex flex-col justify-between"><header class="fixed top-0 left-0 right-0 z-50 py-space-sm px-margin-mobile md:px-margin-desktop"><div class="max-w-max-width mx-auto flex items-center justify-between neu-flat rounded-full px-space-xl py-space-sm backdrop-blur-md transition-all duration-300" style="box-shadow: 0 10px 25px -5px rgba(15,23,42,0.03), 0 8px 10px -6px rgba(15,23,42,0.03), 6px 6px 16px rgba(15,23,42,0.03), -6px -6px 16px #FFFFFF;"><div class="flex items-center gap-space-sm shrink-0"><a class="flex items-center gap-space-xs transition-transform active:scale-95 group" data-path="laman-utama" href="#"><img alt="Brand logo. - Primary color: #0284c7
+- Font: plusJakartaSans
+- Mode: light
+- Roundness: rounded-md
+" class="h-8 w-auto object-contain transition-transform group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/AEtjO1VFBeTUJC--EBv3SyU2Z3qiNn6-cpsFeX47cwzxuebO-Mv1voPgpoyqu5xILmz0-Hr7e0QVAwUc7BetlfPcahMZmwKe5kdIz7g9PeOssdmQTE8mfvl-wLGVVftjzYYKYiKdJFHLdha2PwENV5VsQgzmhMK9pA1XXUbJm7TxEUxjDm77qrsElaF4Ru7ZsiSCUfr-gSIhIhDwKw7a2ttpXSExjpeQsTzMhmQqZIoo-Gk3ueIo-uQD8IiwJzI"><div class="flex flex-col"><span class="font-headline-md text-title-sm tracking-tight text-deep-navy font-bold leading-none">ScentCast</span><span class="font-label-sm text-label-sm uppercase tracking-widest text-atmospheric-blue leading-tight">Malaysia</span></div></a></div><nav class="hidden lg:flex items-center gap-space-md rounded-full" data-active-classes="neu-inset text-atmospheric-blue font-semibold"><a class="px-space-md py-space-xs rounded-full font-label-md text-label-md text-on-surface-variant hover:text-deep-navy hover:neu-button transition-all duration-200" data-path="laman-utama" href="#">Laman Utama</a><a aria-current="page" class="px-space-md py-space-xs rounded-full transition-all duration-200 neu-inset text-atmospheric-blue font-bold shadow-inner" data-path="cadangan-cuaca" href="#">Cadangan Cuaca</a><a class="px-space-md py-space-xs rounded-full font-label-md text-label-md text-on-surface-variant hover:text-deep-navy hover:neu-button transition-all duration-200" data-path="dupe-finder" href="#">Dupe Finder</a><a class="px-space-md py-space-xs rounded-full font-label-md text-label-md text-on-surface-variant hover:text-deep-navy hover:neu-button transition-all duration-200" data-path="direktori" href="#">Direktori</a><a class="px-space-md py-space-xs rounded-full font-label-md text-label-md text-on-surface-variant hover:text-deep-navy hover:neu-button transition-all duration-200" data-path="tentang-kami" href="#">Tentang Kami</a></nav><div class="flex items-center gap-space-md shrink-0"><div class="hidden md:flex items-center gap-space-2xs neu-inset rounded-full px-space-md py-space-2xs text-on-surface-variant font-mono-metric text-label-sm"><span class="material-symbols-outlined text-atmospheric-blue text-sm">thermostat</span><span class="font-semibold text-deep-navy">KL 32°C</span><span class="w-1 h-1 rounded-full bg-outline-variant"></span><span class="text-on-surface-variant">78% RH</span><span class="w-2 h-2 rounded-full bg-sunset-amber animate-pulse ml-space-2xs"></span></div><div class="hidden md:flex items-center neu-inset rounded-full px-space-sm py-space-2xs"><span class="material-symbols-outlined text-outline text-base">search</span><input class="bg-transparent border-0 outline-none text-body-md text-deep-navy placeholder:text-outline text-xs px-space-xs w-28 focus:w-44 transition-all duration-300" placeholder="Cari bauan..." type="text"></div><button aria-label="Tukar Bahasa" class="neu-button p-space-xs rounded-full flex items-center justify-center text-on-surface-variant hover:text-atmospheric-blue transition-colors" type="button"><span class="material-symbols-outlined text-base">translate</span></button><a class="neu-button p-0.5 rounded-full flex items-center justify-center transition-transform hover:scale-105 active:scale-95" data-path="profil" href="#"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1UH87vWSgZec-6rEQPKll9O5tWsao-4jOp0VAsUQW-K44RBsypknzmHgCT_uZIWnumb1x0Sb86Yl-YMfEZTdc2gHTiB0BGIRH7qbSyZ0pQYYjc3DaboSWCW9kWUuNXiPJRsw-zOMuMEo5sNTyzU4gwgX8HIX5Vlr0zML43ZHh1V9CUPiXTL2duAdgF4E7sk5p2KZAMOaVQ87EWhNF539sOVLsrDYPUdD8pmOsaJ2t4RAwEWzX--lSs-G97C"></a></div></div></header><main class="w-full pt-20 bg-ice-white flex-1"><div class="flex flex-col w-full">
+<div class="w-full px-margin-mobile md:px-margin-desktop py-space-xl max-w-max-width mx-auto space-y-space-2xl">
+<!-- Top Status & City Selector Bar -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div class="space-y-space-2xs">
+<div class="flex items-center gap-space-xs">
+<span class="inline-flex items-center gap-1.5 px-space-xs py-0.5 rounded-full neu-inset text-label-sm font-label-sm text-atmospheric-blue uppercase tracking-wider">
+<span class="w-2 h-2 rounded-full bg-sunset-amber animate-pulse"></span>
+            MetMalaysia Real-time Feed
+          </span>
+<span class="text-label-sm font-label-sm text-outline">Kemaskini: 14:00 MYT</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-deep-navy font-bold tracking-tight">
+          Ramalan Sillage &amp; Cuaca Olfaktori
+        </h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">
+          Pengiraan penyejatan nota wangian mengikut profil kelembapan nisbi dan indeks terik semenanjung untuk mengelakkan kesan melekit (cloying).
+        </p>
+</div>
+<!-- City Switcher Toggles (Neumorphic Inset Tray) -->
+<div class="neu-inset p-space-2xs rounded-full flex items-center gap-1 overflow-x-auto max-w-full">
+<button class="city-btn px-space-sm py-space-2xs rounded-full font-label-md text-label-md transition-all duration-200 neu-button text-atmospheric-blue font-bold shadow-sm" data-city="kl" type="button">
+          Kuala Lumpur
+        </button>
+<button class="city-btn px-space-sm py-space-2xs rounded-full font-label-md text-label-md text-on-surface-variant hover:text-deep-navy transition-all duration-200" data-city="penang" type="button">
+          George Town
+        </button>
+<button class="city-btn px-space-sm py-space-2xs rounded-full font-label-md text-label-md text-on-surface-variant hover:text-deep-navy transition-all duration-200" data-city="jb" type="button">
+          Johor Bahru
+        </button>
+<button class="city-btn px-space-sm py-space-2xs rounded-full font-label-md text-label-md text-on-surface-variant hover:text-deep-navy transition-all duration-200" data-city="kk" type="button">
+          Kota Kinabalu
+        </button>
+<button class="city-btn px-space-sm py-space-2xs rounded-full font-label-md text-label-md text-on-surface-variant hover:text-deep-navy transition-all duration-200" data-city="genting" type="button">
+          Genting
+        </button>
+</div>
+</div>
+<!-- Section 1: Live Atmospheric Meteorological Metrics -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Metric 1: Suhu Sebenar -->
+<div class="neu-flat rounded-2xl p-space-md flex flex-col justify-between relative overflow-hidden group hover:translate-y-[-2px] transition-transform">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Suhu Sebenar</span>
+<div class="w-8 h-8 rounded-full neu-inset flex items-center justify-center text-atmospheric-blue">
+<span class="material-symbols-outlined text-sm">device_thermostat</span>
+</div>
+</div>
+<div class="my-space-sm flex items-baseline gap-space-xs">
+<span class="font-display-lg text-display-lg text-deep-navy font-bold leading-none">32°</span>
+<span class="font-mono-metric text-mono-metric text-on-surface-variant">C</span>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<span class="px-space-xs py-0.5 rounded-full neu-inset text-label-sm font-label-sm text-sunset-amber font-semibold">
+            Terik Lembap
+          </span>
+<span class="font-mono-metric text-label-sm text-outline">Kecerunan +1.4°/j</span>
+</div>
+</div>
+<!-- Metric 2: Kelembapan Relatif -->
+<div class="neu-flat rounded-2xl p-space-md flex flex-col justify-between relative overflow-hidden group hover:translate-y-[-2px] transition-transform">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Kelembapan Relatif</span>
+<div class="w-8 h-8 rounded-full neu-inset flex items-center justify-center text-atmospheric-blue">
+<span class="material-symbols-outlined text-sm">humidity_high</span>
+</div>
+</div>
+<div class="my-space-sm flex items-baseline gap-space-xs">
+<span class="font-display-lg text-display-lg text-deep-navy font-bold leading-none">78%</span>
+<span class="font-mono-metric text-mono-metric text-atmospheric-blue font-bold">RH</span>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<span class="px-space-xs py-0.5 rounded-full neu-inset text-label-sm font-label-sm text-atmospheric-blue font-semibold">
+            Tinggi Tropika
+          </span>
+<span class="font-mono-metric text-label-sm text-outline">Penyejatan Lambat</span>
+</div>
+</div>
+<!-- Metric 3: Indeks Haba Olfaktori -->
+<div class="neu-flat rounded-2xl p-space-md flex flex-col justify-between relative overflow-hidden group hover:translate-y-[-2px] transition-transform">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Indeks Haba</span>
+<div class="w-8 h-8 rounded-full neu-inset flex items-center justify-center text-sunset-amber">
+<span class="material-symbols-outlined text-sm">local_fire_department</span>
+</div>
+</div>
+<div class="my-space-sm flex items-baseline gap-space-xs">
+<span class="font-display-lg text-display-lg text-sunset-amber font-bold leading-none">38°</span>
+<span class="font-mono-metric text-mono-metric text-deep-navy font-bold">Terasa</span>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<span class="px-space-xs py-0.5 rounded-full neu-inset text-label-sm font-label-sm text-sunset-amber font-bold">
+            Risiko Cloying
+          </span>
+<span class="font-mono-metric text-label-sm text-outline">Elak Gourmand Pekat</span>
+</div>
+</div>
+<!-- Metric 4: Indeks UV -->
+<div class="neu-flat rounded-2xl p-space-md flex flex-col justify-between relative overflow-hidden group hover:translate-y-[-2px] transition-transform">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Indeks UV</span>
+<div class="w-8 h-8 rounded-full neu-inset flex items-center justify-center text-atmospheric-blue">
+<span class="material-symbols-outlined text-sm">wb_sunny</span>
+</div>
+</div>
+<div class="my-space-sm flex items-baseline gap-space-xs">
+<span class="font-display-lg text-display-lg text-deep-navy font-bold leading-none">9.2</span>
+<span class="font-mono-metric text-mono-metric text-error font-bold">Sangat Tinggi</span>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<span class="px-space-xs py-0.5 rounded-full neu-inset text-label-sm font-label-sm text-error font-semibold">
+            Bahaya Terik
+          </span>
+<span class="font-mono-metric text-label-sm text-outline">Sembur Pada Pakaian</span>
+</div>
+</div>
+</div>
+<!-- Section 2: Scientific Scent Evaporation Inset Card -->
+<div class="neu-inset rounded-2xl p-space-lg md:p-space-xl">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-center">
+<div class="lg:col-span-7 space-y-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-sunset-amber"></span>
+<span class="font-label-sm text-label-sm text-deep-navy uppercase tracking-wider font-bold">Analisis Kinetik Molekul</span>
+<span class="font-mono-metric text-label-sm text-outline">· Suhu Kulit 34.8°C</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-deep-navy font-bold">
+            Tindak Balas Molekul di Bawah Panas 32°C &amp; 78% Kelembapan
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Dalam cuaca tropika Malaysia, haba tinggi memecutkan kadar volatiliti nota atas (top notes) sehingga 300% lebih pantas. Nota manis padat (vanilla berat, tonka bean, dan caramel) akan meruap serentak dengan peluh mikroskopik lalu menghasilkan kesan <strong class="text-deep-navy">cloying</strong> yang menyesakkan persekitaran.
+          </p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm pt-space-2xs">
+<div class="neu-flat p-space-sm rounded-xl space-y-1">
+<div class="flex items-center gap-1.5 text-atmospheric-blue font-label-md text-label-md">
+<span class="material-symbols-outlined text-sm">check_circle</span>
+                Sesuai: Molekul Stabil
+              </div>
+<p class="font-body-md text-label-sm text-on-surface-variant">Ambroxan, Bergamot Calabria, Vetiver Haiti, Calone (Aquatic), &amp; White Musk.</p>
+</div>
+<div class="neu-flat p-space-sm rounded-xl space-y-1">
+<div class="flex items-center gap-1.5 text-error font-label-md text-label-md">
+<span class="material-symbols-outlined text-sm">cancel</span>
+                Berisiko: Molekul Berat
+              </div>
+<p class="font-body-md text-label-sm text-on-surface-variant">Oud Manis, Amber Gris Pekat, Gourmand Coklat, Leather Tradisional.</p>
+</div>
+</div>
+</div>
+<!-- Evaporation Rate Gauge / Visual Dial (Inline Neumorphic SVG Diagram) -->
+<div class="lg:col-span-5 neu-flat p-space-lg rounded-2xl flex flex-col items-center justify-center text-center space-y-space-sm">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-outline">Kadar Kemeruapan Minyak Wangi</span>
+<div class="relative w-44 h-44 flex items-center justify-center">
+<svg class="w-full h-full transform -rotate-90" viewBox="0 0 120 120">
+<circle class="shadow-inner" cx="60" cy="60" fill="none" r="48" stroke="#EFF1F5" stroke-width="10"></circle>
+<!-- Circle Progress: 78% -->
+<circle class="text-atmospheric-blue transition-all duration-1000" cx="60" cy="60" fill="none" r="48" stroke="currentColor" stroke-dasharray="301.59" stroke-dashoffset="66.3" stroke-linecap="round" stroke-width="10"></circle>
+</svg>
+<div class="absolute inset-0 flex flex-col items-center justify-center">
+<span class="font-mono-metric text-display-lg-mobile text-deep-navy font-bold leading-none">3.4x</span>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-tight mt-1">Laju Sejatan</span>
+</div>
+</div>
+<div class="w-full pt-space-2xs space-y-space-2xs">
+<div class="flex justify-between font-mono-metric text-label-sm text-on-surface-variant">
+<span class="">Ketahanan Unjuran:</span>
+<span class="text-deep-navy font-bold">4 - 6 Jam (Sillage Stabil)</span>
+</div>
+<div class="w-full h-2 rounded-full neu-inset overflow-hidden p-0.5">
+<div class="h-full rounded-full bg-gradient-to-r from-atmospheric-blue to-sunset-amber w-3/4"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Section 3: Interactive Neumorphic Preference Filters -->
+<div class="neu-flat rounded-2xl p-space-lg md:p-space-xl space-y-space-lg">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-xs">
+<div>
+<h2 class="font-headline-md text-headline-md text-deep-navy font-bold">Penapis Olfaktori Pintar</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Sesuaikan mengikut ruang aktiviti dan profil bauan kegemaran anda hari ini.</p>
+</div>
+<button class="self-start md:self-auto font-label-md text-label-md text-outline hover:text-atmospheric-blue transition-colors flex items-center gap-1" id="reset-filters" type="button">
+<span class="material-symbols-outlined text-sm">restart_alt</span>
+          Set Semula
+        </button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+<!-- Filter Category 1: Famili Bauan -->
+<div class="space-y-space-xs">
+<div class="flex items-center gap-space-2xs">
+<span class="material-symbols-outlined text-atmospheric-blue text-sm">psychology</span>
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-deep-navy font-bold">Famili Bauan</label>
+</div>
+<div class="flex flex-wrap gap-space-xs" id="scent-family-group">
+<button class="filter-chip neu-inset text-atmospheric-blue font-bold px-space-sm py-space-xs rounded-full font-label-md text-label-md flex items-center gap-1.5 active:scale-95 transition-all" type="button">
+<span class="w-1.5 h-1.5 rounded-full bg-atmospheric-blue"></span>
+              Citrus / Fresh
+            </button>
+<button class="filter-chip neu-button text-deep-navy px-space-sm py-space-xs rounded-full font-label-md text-label-md flex items-center gap-1.5 active:scale-95 transition-all" type="button">
+              Aquatic Marine
+            </button>
+<button class="filter-chip neu-button text-deep-navy px-space-sm py-space-xs rounded-full font-label-md text-label-md flex items-center gap-1.5 active:scale-95 transition-all" type="button">
+              Woody Aromatik
+            </button>
+<button class="filter-chip neu-button text-deep-navy px-space-sm py-space-xs rounded-full font-label-md text-label-md flex items-center gap-1.5 active:scale-95 transition-all" type="button">
+              Floral Segar
+            </button>
+<button class="filter-chip neu-button text-deep-navy px-space-sm py-space-xs rounded-full font-label-md text-label-md flex items-center gap-1.5 active:scale-95 transition-all" type="button">
+              Vanilla Ringan
+            </button>
+</div>
+</div>
+<!-- Filter Category 2: Suasana / Acara -->
+<div class="space-y-space-xs">
+<div class="flex items-center gap-space-2xs">
+<span class="material-symbols-outlined text-atmospheric-blue text-sm">schedule</span>
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-deep-navy font-bold">Suasana Hari Ini</label>
+</div>
+<div class="flex flex-wrap gap-space-xs" id="occasion-group">
+<button class="filter-chip neu-button text-deep-navy px-space-sm py-space-xs rounded-full font-label-md text-label-md flex items-center gap-1.5 active:scale-95 transition-all" type="button">
+              Kuliah &amp; Kasual
+            </button>
+<button class="filter-chip neu-inset text-atmospheric-blue font-bold px-space-sm py-space-xs rounded-full font-label-md text-label-md flex items-center gap-1.5 active:scale-95 transition-all" type="button">
+<span class="w-1.5 h-1.5 rounded-full bg-atmospheric-blue"></span>
+              Pejabat Berhawa Dingin
+            </button>
+<button class="filter-chip neu-button text-deep-navy px-space-sm py-space-xs rounded-full font-label-md text-label-md flex items-center gap-1.5 active:scale-95 transition-all" type="button">
+              Aktiviti Panas Terik
+            </button>
+<button class="filter-chip neu-button text-deep-navy px-space-sm py-space-xs rounded-full font-label-md text-label-md flex items-center gap-1.5 active:scale-95 transition-all" type="button">
+              Temu Janji Malam
+            </button>
+</div>
+</div>
+<!-- Filter Category 3: Julat Bajet -->
+<div class="space-y-space-xs">
+<div class="flex items-center gap-space-2xs">
+<span class="material-symbols-outlined text-atmospheric-blue text-sm">payments</span>
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-deep-navy font-bold">Julat Bajet</label>
+</div>
+<div class="flex flex-wrap gap-space-xs" id="budget-group">
+<button class="filter-chip neu-button text-deep-navy px-space-sm py-space-xs rounded-full font-label-md text-label-md active:scale-95 transition-all" type="button">
+              Bawah RM100
+            </button>
+<button class="filter-chip neu-inset text-atmospheric-blue font-bold px-space-sm py-space-xs rounded-full font-label-md text-label-md flex items-center gap-1.5 active:scale-95 transition-all" type="button">
+<span class="w-1.5 h-1.5 rounded-full bg-atmospheric-blue"></span>
+              RM100 - RM250
+            </button>
+<button class="filter-chip neu-button text-deep-navy px-space-sm py-space-xs rounded-full font-label-md text-label-md active:scale-95 transition-all" type="button">
+              RM250+ (Premium)
+            </button>
+</div>
+</div>
+</div>
+<!-- Action Button -->
+<div class="pt-space-xs flex justify-end">
+<button class="neu-button px-space-xl py-space-sm rounded-full bg-gradient-to-r from-atmospheric-blue to-primary-container text-white font-title-sm text-title-sm font-bold flex items-center gap-space-xs hover:opacity-95 active:scale-98 transition-all shadow-md" id="trigger-calc" type="button">
+<span class="material-symbols-outlined text-base">auto_awesome</span>
+          Jana Cadangan Wangian
+        </button>
+</div>
+</div>
+<!-- Section 4: Curated Recommendation Results -->
+<div class="space-y-space-md">
+<div class="flex items-center justify-between">
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-md text-headline-md text-deep-navy font-bold">Wangian Disyorkan</span>
+<span class="px-space-xs py-0.5 rounded-full neu-inset font-mono-metric text-label-sm text-atmospheric-blue font-bold">4 Pilihan Sesuai</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Diformulasi bertahan dalam kelembapan tropika tanpa memerangkap haba badan.</p>
+</div>
+<div class="hidden sm:flex items-center gap-space-2xs text-label-sm font-label-sm text-outline">
+<span class="material-symbols-outlined text-sm text-sunset-amber">verified</span>
+          Disahkan oleh Enjin Olfaktori ScentCast
+        </div>
+</div>
+<!-- 4 Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg">
+<!-- Fragrance Card 1 -->
+<div class="neu-flat rounded-2xl p-space-md flex flex-col justify-between space-y-space-md group hover:translate-y-[-3px] transition-all">
+<div class="flex gap-space-md">
+<!-- Inset Image Cavity -->
+<div class="neu-inset rounded-xl p-space-xs w-28 h-36 shrink-0 flex items-center justify-center overflow-hidden">
+<img class="w-full h-full object-contain rounded-lg" data-alt="A minimalist frosted crystal perfume bottle filled with vibrant Mediterranean blue eau de parfum, resting on clean white travertine stone with soft ambient midday sunlight casting subtle diffuse reflections in an airy modern studio setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfecub8VhIOKFLaNc9aV-6aqbeoGp_HAUKy8wPu-bPFrWhXQfzuNaC2oTyrGnsS7CtfdxgL6boNt44QI9IdVT57AQ2IaMDxvWfLTn3dtEsqkji6_0LhQWJTzBI19g24KTpDOKa2DmkUUVb_lY8FNGk0TS-XriKNvbee5zhSqyYu2qXZfX41guiTHR9aJtBoqlLQNUDe5P8AbXPbiPVi8_HgysEg0p23iQSaWFiaLuT--SZNyLZ_P16Gg">
+</div>
+<!-- Perfume Specs -->
+<div class="flex-1 min-w-0 space-y-space-2xs">
+<div class="flex items-center justify-between">
+<span class="text-label-sm font-label-sm uppercase tracking-wider text-atmospheric-blue font-bold">Pilihan Juara Cuaca</span>
+<span class="font-mono-metric text-label-sm text-sunset-amber font-bold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-xs">bolt</span> 98% Padanan
+                </span>
+</div>
+<h3 class="font-title-sm text-title-sm text-deep-navy font-bold truncate">Afnan Turathi Blue</h3>
+<p class="font-body-md text-body-md text-on-surface-variant truncate">Eau de Parfum · 90ml</p>
+<!-- Inset Pyramid Summary -->
+<div class="neu-inset p-space-xs rounded-xl space-y-1 my-space-2xs">
+<div class="flex items-center justify-between font-label-sm text-label-sm text-deep-navy">
+<span class="">Nota Dominan:</span>
+<span class="font-mono-metric text-atmospheric-blue">Grapefruit, Ambroxan, Woods</span>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span class="">Ketahanan:</span>
+<span class="font-mono-metric font-bold text-deep-navy">8 - 10 Jam</span>
+</div>
+</div>
+<div class="flex items-baseline gap-space-xs pt-1">
+<span class="font-title-sm text-title-sm text-deep-navy font-bold">RM168</span>
+<span class="font-label-sm text-label-sm text-outline">Harga Purata Tempatan</span>
+</div>
+</div>
+</div>
+<!-- Card Actions -->
+<div class="flex items-center justify-between pt-space-xs border-t border-border-hairline gap-space-xs">
+<button class="neu-inset px-space-sm py-space-2xs rounded-full font-label-md text-label-md text-atmospheric-blue font-bold flex items-center gap-1 active:scale-95 transition-all" type="button">
+<span class="material-symbols-outlined text-sm">compare_arrows</span>
+              Alternatif Tygar (RM1,400)
+            </button>
+<div class="flex items-center gap-space-2xs">
+<button aria-label="Simpan Kegemaran" class="neu-button w-8 h-8 rounded-full flex items-center justify-center text-on-surface-variant hover:text-sunset-amber active:scale-95 transition-all" type="button">
+<span class="material-symbols-outlined text-sm">favorite_border</span>
+</button>
+<button class="neu-button px-space-md py-space-2xs rounded-full font-label-md text-label-md text-deep-navy font-bold hover:text-atmospheric-blue active:scale-95 transition-all" type="button">
+                Detail Wangian
+              </button>
+</div>
+</div>
+</div>
+<!-- Fragrance Card 2 -->
+<div class="neu-flat rounded-2xl p-space-md flex flex-col justify-between space-y-space-md group hover:translate-y-[-3px] transition-all">
+<div class="flex gap-space-md">
+<!-- Inset Image Cavity -->
+<div class="neu-inset rounded-xl p-space-xs w-28 h-36 shrink-0 flex items-center justify-center overflow-hidden">
+<img class="w-full h-full object-contain rounded-lg" data-alt="A sleek cylindrical clear glass fragrance vial with clear liquid and brushed aluminum silver cap, styled on an architectural matte grey podium surrounded by faint citrus droplets, bright daylight aesthetic with refined minimalism." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvm0E8ogw2elk2TVnQ4skToQdVMF2QGH27joxR9aqQYNbnu661DLi-LZY6z_t1diW39WcM5GaFQlMZ-Xn0jzLqwHtPp_NTAJsT17g09NDuTeLD0Pr_IxMmPWl9QnRbDUHsIxbMflcrbT9kooSHeYlUhOfH_Asqbg4PmQUb75HjBLOfWSuSBxQI3qUJ0v9mHCvdVK8I3MKS5_S2uriqi5JbqNUbDrjX8gbo2EPouwQwrB-HRcO1njZxmQ">
+</div>
+<!-- Perfume Specs -->
+<div class="flex-1 min-w-0 space-y-space-2xs">
+<div class="flex items-center justify-between">
+<span class="text-label-sm font-label-sm uppercase tracking-wider text-outline font-bold">Bajet Mesra Poket</span>
+<span class="font-mono-metric text-label-sm text-sunset-amber font-bold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-xs">bolt</span> 91% Padanan
+                </span>
+</div>
+<h3 class="font-title-sm text-title-sm text-deep-navy font-bold truncate">Zara Lisboa Colombo</h3>
+<p class="font-body-md text-body-md text-on-surface-variant truncate">Eau de Toilette · 100ml</p>
+<!-- Inset Pyramid Summary -->
+<div class="neu-inset p-space-xs rounded-xl space-y-1 my-space-2xs">
+<div class="flex items-center justify-between font-label-sm text-label-sm text-deep-navy">
+<span class="">Nota Dominan:</span>
+<span class="font-mono-metric text-atmospheric-blue">Lemon, Sea Notes, Clary Sage</span>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span class="">Ketahanan:</span>
+<span class="font-mono-metric font-bold text-deep-navy">4 - 5 Jam</span>
+</div>
+</div>
+<div class="flex items-baseline gap-space-xs pt-1">
+<span class="font-title-sm text-title-sm text-deep-navy font-bold">RM69</span>
+<span class="font-label-sm text-label-sm text-outline">Zara Malaysia Official</span>
+</div>
+</div>
+</div>
+<!-- Card Actions -->
+<div class="flex items-center justify-between pt-space-xs border-t border-border-hairline gap-space-xs">
+<button class="neu-inset px-space-sm py-space-2xs rounded-full font-label-md text-label-md text-atmospheric-blue font-bold flex items-center gap-1 active:scale-95 transition-all" type="button">
+<span class="material-symbols-outlined text-sm">compare_arrows</span>
+              Alternatif Acqua Di Gio
+            </button>
+<div class="flex items-center gap-space-2xs">
+<button aria-label="Simpan Kegemaran" class="neu-button w-8 h-8 rounded-full flex items-center justify-center text-on-surface-variant hover:text-sunset-amber active:scale-95 transition-all" type="button">
+<span class="material-symbols-outlined text-sm">favorite_border</span>
+</button>
+<button class="neu-button px-space-md py-space-2xs rounded-full font-label-md text-label-md text-deep-navy font-bold hover:text-atmospheric-blue active:scale-95 transition-all" type="button">
+                Detail Wangian
+              </button>
+</div>
+</div>
+</div>
+<!-- Fragrance Card 3 -->
+<div class="neu-flat rounded-2xl p-space-md flex flex-col justify-between space-y-space-md group hover:translate-y-[-3px] transition-all">
+<div class="flex gap-space-md">
+<!-- Inset Image Cavity -->
+<div class="neu-inset rounded-xl p-space-xs w-28 h-36 shrink-0 flex items-center justify-center overflow-hidden">
+<img class="w-full h-full object-contain rounded-lg" data-alt="A luxurious square gold-accented fragrance bottle with pristine transparent glass showing amber-tinted juice, placed on an ice white pedestal with subtle soft shadows in a serene architectural interior setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAN7oGFD4AeXRe1JQstD0SZc4tOMGDVp63ETJkp24Gc7lrCZXHuAOWrDM3JA3f5k5izrTIVhpFEEX0daTZsdoDEvYNxiUzUE3No7UDLjYoH1KpXxfZVGgdBNRuxaLBQeT2sceD3f_vhef9OlOGvZcEcviSq0qPioo8759zaDR7fTN8k70CKPGTBTeJnQ7qn_VwE1-tma6HmAaEnXTbSXavQD27RIgbmCHmgqKAj_f8WTIIEYYL7GuYcWA">
+</div>
+<!-- Perfume Specs -->
+<div class="flex-1 min-w-0 space-y-space-2xs">
+<div class="flex items-center justify-between">
+<span class="text-label-sm font-label-sm uppercase tracking-wider text-atmospheric-blue font-bold">Terbaik Pejabat Aircond</span>
+<span class="font-mono-metric text-label-sm text-sunset-amber font-bold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-xs">bolt</span> 94% Padanan
+                </span>
+</div>
+<h3 class="font-title-sm text-title-sm text-deep-navy font-bold truncate">Evoke Gold For Him</h3>
+<p class="font-body-md text-body-md text-on-surface-variant truncate">Ajmal Perfumes · 90ml</p>
+<!-- Inset Pyramid Summary -->
+<div class="neu-inset p-space-xs rounded-xl space-y-1 my-space-2xs">
+<div class="flex items-center justify-between font-label-sm text-label-sm text-deep-navy">
+<span class="">Nota Dominan:</span>
+<span class="font-mono-metric text-atmospheric-blue">Neroli, Iris Bersih, Amber</span>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span class="">Ketahanan:</span>
+<span class="font-mono-metric font-bold text-deep-navy">7 - 9 Jam</span>
+</div>
+</div>
+<div class="flex items-baseline gap-space-xs pt-1">
+<span class="font-title-sm text-title-sm text-deep-navy font-bold">RM165</span>
+<span class="font-label-sm text-label-sm text-outline">Import Tulen</span>
+</div>
+</div>
+</div>
+<!-- Card Actions -->
+<div class="flex items-center justify-between pt-space-xs border-t border-border-hairline gap-space-xs">
+<button class="neu-inset px-space-sm py-space-2xs rounded-full font-label-md text-label-md text-atmospheric-blue font-bold flex items-center gap-1 active:scale-95 transition-all" type="button">
+<span class="material-symbols-outlined text-sm">compare_arrows</span>
+              Dupe Prada L'Homme
+            </button>
+<div class="flex items-center gap-space-2xs">
+<button aria-label="Simpan Kegemaran" class="neu-button w-8 h-8 rounded-full flex items-center justify-center text-on-surface-variant hover:text-sunset-amber active:scale-95 transition-all" type="button">
+<span class="material-symbols-outlined text-sm">favorite_border</span>
+</button>
+<button class="neu-button px-space-md py-space-2xs rounded-full font-label-md text-label-md text-deep-navy font-bold hover:text-atmospheric-blue active:scale-95 transition-all" type="button">
+                Detail Wangian
+              </button>
+</div>
+</div>
+</div>
+<!-- Fragrance Card 4 -->
+<div class="neu-flat rounded-2xl p-space-md flex flex-col justify-between space-y-space-md group hover:translate-y-[-3px] transition-all">
+<div class="flex gap-space-md">
+<!-- Inset Image Cavity -->
+<div class="neu-inset rounded-xl p-space-xs w-28 h-36 shrink-0 flex items-center justify-center overflow-hidden">
+<img class="w-full h-full object-contain rounded-lg" data-alt="An amber glass artisanal apothecary fragrance bottle with minimalist white label, surrounded by coarse sea salt crystals and fresh green bergamot rind slices on an off-white textured table surface." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCD00emZo838PNkwONmlYSlunhB0duNxCTC-78Z_u_sycD-diMHLBhJxZmUWm1e3pqhjbEqRWD2GA8h9qD5GetfnVKk1i8x_CZhiDE5lwb3OltUJEkiIBvvYQmJPzPO1s0fd72-QH4KmgatXOSqMX7x4mBmO_fwTDhVSC0PfggfK8kOyioxrYgXU0pp_ShA6xjw0iRrq-3CuwXU5xXf51LVTnxDih95aFitK9GNt92EGcE73j7pqGzMMg">
+</div>
+<!-- Perfume Specs -->
+<div class="flex-1 min-w-0 space-y-space-2xs">
+<div class="flex items-center justify-between">
+<span class="text-label-sm font-label-sm uppercase tracking-wider text-sunset-amber font-bold">Artisanal Tempatan MY</span>
+<span class="font-mono-metric text-label-sm text-sunset-amber font-bold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-xs">bolt</span> 89% Padanan
+                </span>
+</div>
+<h3 class="font-title-sm text-title-sm text-deep-navy font-bold truncate">Sea Salt &amp; Bergamot</h3>
+<p class="font-body-md text-body-md text-on-surface-variant truncate">The Scent Supply Co · 50ml</p>
+<!-- Inset Pyramid Summary -->
+<div class="neu-inset p-space-xs rounded-xl space-y-1 my-space-2xs">
+<div class="flex items-center justify-between font-label-sm text-label-sm text-deep-navy">
+<span class="">Nota Dominan:</span>
+<span class="font-mono-metric text-atmospheric-blue">Sea Salt, Bergamot, Sage, Driftwood</span>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span class="">Ketahanan:</span>
+<span class="font-mono-metric font-bold text-deep-navy">5 - 6 Jam</span>
+</div>
+</div>
+<div class="flex items-baseline gap-space-xs pt-1">
+<span class="font-title-sm text-title-sm text-deep-navy font-bold">RM55</span>
+<span class="font-label-sm text-label-sm text-outline">Keluaran Buatan Malaysia</span>
+</div>
+</div>
+</div>
+<!-- Card Actions -->
+<div class="flex items-center justify-between pt-space-xs border-t border-border-hairline gap-space-xs">
+<button class="neu-inset px-space-sm py-space-2xs rounded-full font-label-md text-label-md text-atmospheric-blue font-bold flex items-center gap-1 active:scale-95 transition-all" type="button">
+<span class="material-symbols-outlined text-sm">compare_arrows</span>
+              Vibe Jo Malone Wood Sage
+            </button>
+<div class="flex items-center gap-space-2xs">
+<button aria-label="Simpan Kegemaran" class="neu-button w-8 h-8 rounded-full flex items-center justify-center text-on-surface-variant hover:text-sunset-amber active:scale-95 transition-all" type="button">
+<span class="material-symbols-outlined text-sm">favorite_border</span>
+</button>
+<button class="neu-button px-space-md py-space-2xs rounded-full font-label-md text-label-md text-deep-navy font-bold hover:text-atmospheric-blue active:scale-95 transition-all" type="button">
+                Detail Wangian
+              </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Application / Spray Advice Tip Banner -->
+<div class="neu-flat rounded-2xl p-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-full neu-inset flex items-center justify-center text-sunset-amber shrink-0">
+<span class="material-symbols-outlined text-xl">tips_and_updates</span>
+</div>
+<div>
+<h4 class="font-title-sm text-title-sm text-deep-navy font-bold">Petua Semburan Cuaca 32°C Hari Ini</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Semburkan 2 semburan di kolar baju dan 1 di belakang leher. Elakkan semburan di lipatan siku jika anda banyak berpeluh di luar bangunan.
+          </p>
+</div>
+</div>
+<a class="shrink-0 neu-button px-space-md py-space-xs rounded-full font-label-md text-label-md text-atmospheric-blue font-bold flex items-center gap-1.5 hover:shadow-lg transition-all" data-path="scentbot-ai" href="#">
+<span class="">Tanya ScentBot AI</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<script>
+  (function() {
+    // Interactive City Switching
+    const cityButtons = document.querySelectorAll('.city-btn');
+    cityButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        cityButtons.forEach(b => {
+          b.className = 'city-btn px-space-sm py-space-2xs rounded-full font-label-md text-label-md text-on-surface-variant hover:text-deep-navy transition-all duration-200';
+        });
+        btn.className = 'city-btn px-space-sm py-space-2xs rounded-full font-label-md text-label-md transition-all duration-200 neu-button text-atmospheric-blue font-bold shadow-sm';
+      });
+    });
+
+    // Neumorphic Chip Toggle Behavior
+    const setupChips = (containerId) => {
+      const group = document.getElementById(containerId);
+      if (!group) return;
+      const chips = group.querySelectorAll('.filter-chip');
+      chips.forEach(chip => {
+        chip.addEventListener('click', () => {
+          const isSelected = chip.classList.contains('neu-inset');
+          if (isSelected) {
+            chip.classList.remove('neu-inset', 'text-atmospheric-blue', 'font-bold');
+            chip.classList.add('neu-button', 'text-deep-navy');
+            const dot = chip.querySelector('.rounded-full');
+            if (dot) dot.remove();
+          } else {
+            chip.classList.remove('neu-button', 'text-deep-navy');
+            chip.classList.add('neu-inset', 'text-atmospheric-blue', 'font-bold');
+            if (!chip.querySelector('.rounded-full')) {
+              const dot = document.createElement('span');
+              dot.className = 'w-1.5 h-1.5 rounded-full bg-atmospheric-blue';
+              chip.prepend(dot);
+            }
+          }
+        });
+      });
+    };
+
+    setupChips('scent-family-group');
+    setupChips('occasion-group');
+    setupChips('budget-group');
+
+    // Trigger Calc Button Microinteraction
+    const calcBtn = document.getElementById('trigger-calc');
+    if (calcBtn) {
+      calcBtn.addEventListener('click', () => {
+        const originalText = calcBtn.innerHTML;
+        calcBtn.innerHTML = '<span class="material-symbols-outlined text-base animate-spin">refresh</span> Menjana Algoritma...';
+        calcBtn.disabled = true;
+        setTimeout(() => {
+          calcBtn.innerHTML = '<span class="material-symbols-outlined text-base">done_all</span> Berjaya Dikemaskini';
+          setTimeout(() => {
+            calcBtn.innerHTML = originalText;
+            calcBtn.disabled = false;
+          }, 1500);
+        }, 800);
+      });
+    }
+
+    // Reset button
+    const resetBtn = document.getElementById('reset-filters');
+    if (resetBtn) {
+      resetBtn.addEventListener('click', () => {
+        document.querySelectorAll('.filter-chip').forEach(chip => {
+          chip.classList.remove('neu-inset', 'text-atmospheric-blue', 'font-bold');
+          chip.classList.add('neu-button', 'text-deep-navy');
+          const dot = chip.querySelector('.rounded-full');
+          if (dot) dot.remove();
+        });
+      });
+    }
+  })();
+</script></main><div class="fixed bottom-6 right-6 z-40"><a class="neu-floating flex items-center gap-space-xs px-space-md py-space-sm rounded-full text-deep-navy hover:text-atmospheric-blue transition-all group" data-path="scentbot-ai" href="#"><span class="relative flex h-3 w-3"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-sunset-amber opacity-75"></span><span class="relative inline-flex rounded-full h-3 w-3 bg-sunset-amber"></span></span><span class="font-label-md text-label-md font-bold">ScentBot AI</span><span class="material-symbols-outlined text-atmospheric-blue group-hover:translate-x-0.5 transition-transform text-sm">smart_toy</span></a></div><footer class="w-full bg-ice-white pt-space-2xl pb-space-xl"><div class="max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop"><div class="neu-flat rounded-lg p-space-xl mb-space-lg"><div class="grid grid-cols-1 md:grid-cols-4 gap-space-lg mb-space-xl"><div class="space-y-space-xs md:col-span-2"><div class="flex items-center gap-space-xs"><span class="font-headline-md text-title-sm font-bold text-deep-navy">ScentCast Malaysia</span><span class="px-space-xs py-0.5 rounded-full neu-inset text-label-sm font-label-sm text-atmospheric-blue uppercase">Cuaca &amp; Aroma</span></div><p class="font-body-md text-body-md text-on-surface-variant max-w-md">Kecerdasan ramalan bau termaju disesuaikan mengikut kelembapan tropika, haba ekstrem, dan iklim mikro Malaysia.</p><div class="pt-space-xs text-label-sm font-label-sm text-outline">Data Cuaca Rasmi: <span class="text-deep-navy font-semibold">MetMalaysia API Integration</span></div></div><div class="space-y-space-xs"><span class="font-label-md text-label-md uppercase text-deep-navy tracking-wider">Navigasi Pantas</span><ul class="space-y-space-2xs"><li class="font-body-md text-body-md"><a class="text-on-surface-variant hover:text-atmospheric-blue transition-colors" data-path="cadangan-cuaca" href="#">Indeks Sillage Hujan</a></li><li class="font-body-md text-body-md"><a class="text-on-surface-variant hover:text-atmospheric-blue transition-colors" data-path="dupe-finder" href="#">Alternatif Mampu Milik</a></li><li class="font-body-md text-body-md"><a class="text-on-surface-variant hover:text-atmospheric-blue transition-colors" data-path="direktori" href="#">Direktori Jenama Tempatan</a></li></ul></div><div class="space-y-space-xs"><span class="font-label-md text-label-md uppercase text-deep-navy tracking-wider">Metodologi Olfaktori</span><ul class="space-y-space-2xs"><li class="font-body-md text-body-md"><a class="text-on-surface-variant hover:text-atmospheric-blue transition-colors" data-path="tentang-kami" href="#">Ujian Penyejatan Haba</a></li><li class="font-body-md text-body-md"><a class="text-on-surface-variant hover:text-atmospheric-blue transition-colors" data-path="tentang-kami" href="#">Metrik Volatiliti Nota</a></li><li class="font-body-md text-body-md"><a class="text-on-surface-variant hover:text-atmospheric-blue transition-colors" data-path="privasi" href="#">Dasar Privasi Data</a></li></ul></div></div><div class="flex flex-col md:flex-row items-center justify-between pt-space-md border-t border-border-hairline gap-space-sm"><div class="font-label-sm text-label-sm text-outline">© 2025 ScentCast Malaysia. Hak Cipta Terpelihara.</div><div class="flex items-center gap-space-md"><span class="font-mono-metric text-label-sm text-on-surface-variant flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-atmospheric-blue"></span> KL Sentral Sensor Aktif</span><span class="font-mono-metric text-label-sm text-outline">v2.4.0-tropic</span></div></div></div></div></footer>
+
+</body></html>

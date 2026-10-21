@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" width="240" height="60" fill="none">
+  <defs>
+    <linearGradient id="scentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="50%" stop-color="#818CF8"/>
+      <stop offset="100%" stop-color="#F472B6"/>
+    </linearGradient>
+    <linearGradient id="cloudSun" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+  </defs>
+  <!-- Bottle outline with weather scent aura -->
+  <g transform="translate(6, 6)">
+    <!-- Aura mist circle -->
+    <circle cx="24" cy="24" r="22" fill="url(#scentGrad)" opacity="0.15"/>
+    <path d="M24 8 C20 14, 14 18, 14 26 C14 32 18.5 36 24 36 C29.5 36 34 32 34 26 C34 18, 28 14, 24 8Z" fill="url(#scentGrad)" stroke="#4F46E5" stroke-width="1.5" stroke-linejoin="round"/>
+    <!-- Atomizer cap -->
+    <rect x="21" y="4" width="6" height="4" rx="1.5" fill="#4F46E5"/>
+    <line x1="24" y1="2" x2="24" y2="4" stroke="#4F46E5" stroke-width="2" stroke-linecap="round"/>
+    <!-- Sun/Weather sparkle -->
+    <circle cx="34" cy="12" r="3.5" fill="#F59E0B"/>
+    <path d="M34 6 L34 8 M34 16 L34 18 M28 12 L30 12 M38 12 L40 12" stroke="#F59E0B" stroke-width="1.5" stroke-linecap="round"/>
+  </g>
+  <!-- Brand text -->
+  <text x="60" y="34" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="24" font-weight="800" fill="#0F172A" letter-spacing="-0.5">Scent<tspan fill="url(#scentGrad)">Cast</tspan></text>
+  <text x="61" y="46" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="9" font-weight="600" fill="#64748B" letter-spacing="1.2">FRAGRANCE &amp; WEATHER INTEL</text>
+</svg>
